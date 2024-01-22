@@ -1,0 +1,23 @@
+.img-container-2 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.img-container-3 {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 30px;
+}
+figcaption {
+  text-align: center;
+  font: smaller sans-serif;
+  font-size: 12px;
+  color: "red";
+}
