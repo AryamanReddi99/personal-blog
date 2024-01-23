@@ -64,6 +64,7 @@ These animations are based on [this video by The Coding Train](https://www.youtu
 
 You can find the code for this project [here.](https://github.com/AryamanReddi99/collatz-visualisation)
 
+Please note that the gifs on this page may Moire a bit depending on your monitor resolution.
 ---
 
 ## Code
@@ -227,22 +228,13 @@ You can then use the **Movie Maker** tool in Processing to render these frames a
 
 The result is pretty cool:
 
-{{< figure src="videos/collatz_parallel_purple.gif" caption="100,000 sequences, angle = 0.15" width="50%">}}
+{{< figure src="videos/collatz_parallel_purple.gif" caption="100,000 sequences, angle = 0.15" width="100%">}}
 
-Playing with the `angle` variable has a huge effect on the patterns that are generated, as certain 'frequencies' can result in fractal-like structures (try various divisions of $\pi$ to see what I mean!):
+Playing with the `angle` variable has a huge effect on the patterns that are generated, as certain 'frequencies' can result in fractal-like structures like those shown below:
 
-{{< rawhtml >}}
-  <div class="clearfix">
-    <div class="img-container-2">
-    <img src="videos/collatz_parallel_green.gif" style="margin-bottom: 10px">
-    <figcaption>100,000 sequences, angle = $\pi/2$</figcaption>
-    </div>
-    <div class="img-container-2">
-    <img src="videos/collatz_parallel_autumn.gif" style="margin-bottom: 10px">
-    <figcaption>100,000 sequences, angle = $\pi/3$</figcaption>
-    </div>
-  </div>
-{{< /rawhtml >}}
+{{< figure src="videos/collatz_parallel_green.gif" caption="100,000 sequences, angle = $\pi/2$" width="100%">}}
+
+{{< figure src="videos/collatz_parallel_autumn.gif" caption="100,000 sequences, angle = $\pi/3$" width="100%">}}
 
 ---
 
