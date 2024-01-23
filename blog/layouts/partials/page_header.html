@@ -1,9 +1,6 @@
 {{ $page := . }}
 {{ $featured := partial "blox-core/functions/get_featured_image.html" $page }}
 
-/*MathJax*/
-{{ if .Params.mathjax }}{{ partial "mathjax_support.html" . }}{{ end }}
-
 {{ $anchor := $page.Params.image.focal_point | default "Smart" }}
 
 {{/* Set default titles for node pages */}}
