@@ -1,5 +1,5 @@
 ---
-title: Animating the Collatz Conjecture
+title: Animating the Collatz Conjecture 💫
 date: '2024-01-22T00:00:00Z'
 math: true
 draft: False
@@ -50,23 +50,11 @@ Let's try an arbitrary number (e.g. 11) to see what happens when we repeatedly a
 
 When we reach 1, we get stuck in a loop (1 → 4 → 2 → 1) that prevents us from visiting any other numbers henceforth. This is the heart of the Collatz conjecture: **all sequences eventually get stuck at 1.**
 
-In mathematics, a conjecture refers to a proposition that is presented without formal proof. Despite its simplicity, a proof of the Collatz conjecture has evaded mathematicians thus far. Empirically, it has held true for every number we've checked so far ([as of 2020, we've verified all integers from 1 to 2^68](https://link.springer.com/article/10.1007/s11227-020-03368-x)), but we would only need 1 counterexample to disprove it.
+In mathematics, a conjecture refers to a proposition that is presented without formal proof. Despite its simplicity, the Collatz conjecture has evaded a rigorous proof mathematicians thus far. Empirically, it has held true for every number we've checked ([as of 2020, we've verified all integers from 1 to 2^68](https://link.springer.com/article/10.1007/s11227-020-03368-x)), but we would only need 1 counterexample to disprove it.
 
 On this page, we'll see how to animate the Collatz conjecture using the program **Processing**.
 
-{{< rawhtml >}}
-  <div class="clearfix">
-    <div class="img-container-2">
-    <img src="videos/collatz_parallel_purple.gif" style="margin-bottom: 10px">
-    <figcaption>angle = 0.15</figcaption>
-    </div>
-    <div class="img-container-2">
-    <img src="videos/collatz_parallel_green.gif" style="margin-bottom: 10px">
-    <figcaption>angle = $\pi/2$</figcaption>
-    </div>
-  </div>
-{{< /rawhtml >}}
-{{< figure src="videos/collatz_parallel_autumn.gif" caption="angle = $\pi/3$" width="50%">}}
+---
 
 As far as I know, the idea to illustrate the Collatz conjecture with these branching patterns comes from the book **Visions of Numberland** by Edmund Harriss and Alex Bellos.
 
@@ -146,7 +134,7 @@ IntList collatz_thread(int n) {
 }
 ```
 
-We'll then specify the ``setupproc()`` function, which runs before the drawing starts in Processing.
+We'll then specify the ``setup()`` function, which runs before the drawing starts in Processing.
 
 Here, we'll generate the sequences starting from 1 to our chosen highest seed and assign each sequence a colour (this can be random or follow some specific rules).
 
@@ -168,7 +156,7 @@ void setup() {
     if (final_val%2==1) {
       sequence_colour = #FF0D00; //red
     } else {
-      sequence_colour = #08FF05; //green
+      sequence_colour = #142ae8; //blue
     }
     
     // Random colours
@@ -197,8 +185,6 @@ We then extend each branch of each sequence by 1 number. To do this, we first tr
 We then create one more line extending from the end of this branch (of a specific angle and colour) using the ``line()`` function, which draws directly on our canvas.
 
 If you want to save these frames to create an animation like those shown on this page, you can uncomment the 2 lines after ``// Video`` which will save the individual frames to a folder called 'frames'.
-
-You can then use the **Movie Maker** tool in Processing to render these frames as a video (explained [here](https://www.youtube.com/watch?v=G2hI9XL6oyk&t=376s&pp=ygUWbW92aWUgbWFrZXIgcHJvY2Vzc2luZw%3D%3D)).
 
 Finally, once all branches have been completed, we stop the animation.
 
@@ -237,6 +223,27 @@ void draw() {
 }
 ```
 
+You can then use the **Movie Maker** tool in Processing to render these frames as a video (explained [here](https://www.youtube.com/watch?v=G2hI9XL6oyk&t=376s&pp=ygUWbW92aWUgbWFrZXIgcHJvY2Vzc2luZw%3D%3D)).
+
+The result is pretty cool:
+
+{{< figure src="videos/collatz_parallel_purple.gif" caption="100,000 sequences, angle = 0.15" width="50%">}}
+
+Playing with the `angle` variable has a huge effect on the patterns that are generated, as certain 'frequencies' can result in fractal-like structures (try various divisions of $\pi$ to see what I mean!):
+
+{{< rawhtml >}}
+  <div class="clearfix">
+    <div class="img-container-2">
+    <img src="videos/collatz_parallel_green.gif" style="margin-bottom: 10px">
+    <figcaption>100,000 sequences, angle = $\pi/2$</figcaption>
+    </div>
+    <div class="img-container-2">
+    <img src="videos/collatz_parallel_autumn.gif" style="margin-bottom: 10px">
+    <figcaption>100,000 sequences, angle = $\pi/3$</figcaption>
+    </div>
+  </div>
+{{< /rawhtml >}}
+
 ---
 
 ## Notes
@@ -244,6 +251,4 @@ void draw() {
 To try this project for yourself, you can just download the code [here](https://github.com/AryamanReddi99/collatz-visualisation) and run it in processing.
 
 The file `collatz_branches_parallel/collatz_prog.pde` will animate the sequences in parallel (all the branches at once) whereas the file `collatz_branches_serial/collatz_sketch.pde` will animate them one after another.
-
-It should be noted that the `angle` variable has a huge effect on the patterns that are generated, as certain 'frequencies' can result in fractal-like structures (try various divisions of $\pi$ to see what I mean!).
 

@@ -7,4 +7,6 @@ image:
   placement: 2
   caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
 summary: A tutorial on how to use an embedded Windows TTS package to provide audio cues in WSL (Windows Subsystem for Linux).
+authors:
+  - admin
 ---

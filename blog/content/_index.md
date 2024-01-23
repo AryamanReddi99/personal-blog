@@ -128,6 +128,18 @@ sections:
   #   design:
   #     columns: '2'
   - block: collection
+    id: featured
+    content:
+      title: Publications
+      filters:
+        folders:
+          - publication
+        featured_only: true
+    design:
+      columns: '2'
+      view: card
+      flip_alt_rows: false
+  - block: collection
     id: posts
     content:
       title: Blog
@@ -197,17 +209,6 @@ sections:
   #   design:
   #     columns: '1'
   # - block: collection
-  #   id: featured
-  #   content:
-  #     title: Featured Publications
-  #     filters:
-  #       folders:
-  #         - publication
-  #       featured_only: true
-  #   design:
-  #     columns: '2'
-  #     view: card
-  # - block: collection
   #   content:
   #     title: Recent Publications
   #     text: |-
@@ -229,7 +230,7 @@ sections:
         folders:
           - event
     design:
-      columns: '3'
+      columns: '1'
       view: compact
   # - block: tag_cloud
   #   content:

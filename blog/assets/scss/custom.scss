@@ -21,3 +21,10 @@ figcaption {
   font-size: 12px;
   color: "red";
 }
+
+.media.stream-item img {
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  // margin-left: 30px;
+}

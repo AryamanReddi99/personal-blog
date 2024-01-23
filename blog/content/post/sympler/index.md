@@ -1,6 +1,6 @@
 ---
 title: Symposium on Lifelong Explainable Robot Learning (SYMPLER) 2023 🦾
-subtitle: Our lab (LiteRL) and our sister lab (Pearl) co-hosted the [Symposium on Lifelong and Explainable Robot Learning](https://sites.google.com/view/sympler/home) in Nürnberg.
+subtitle: Our lab (LiteRL) and our sister lab (Pearl) co-hosted the [Symposium on Lifelong and Explainable Robot Learning](https://sites.google.com/view/sympler/home) in Nürnberg. 
 
 # Summary for listings and search engines
 summary: Our lab (LiteRL) and our sister lab (Pearl) co-hosted the [Symposium on Lifelong and Explainable Robot Learning](https://sites.google.com/view/sympler/home) in Nürnberg.

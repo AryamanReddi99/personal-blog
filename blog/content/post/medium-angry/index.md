@@ -7,4 +7,6 @@ image:
   placement: 2
   caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
 summary: Sidney Lumet’s 1957 feature film ‘12 Angry Men’, adapted from Reginald Rose’s teleplay of the same name, is a contained courtroom thriller that explores justice, reason, and civic duty.
+authors:
+  - admin
 ---
