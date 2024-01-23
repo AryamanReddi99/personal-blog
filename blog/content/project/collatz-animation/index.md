@@ -15,36 +15,30 @@ image:
   caption: 'Image credit: **Aryaman Reddi**'
 summary: Animating one of the most beautiful and confounding problems in math.
 ---
+
 ## The Collatz Conjecture
 The Collatz conjecture is among the strangest, simplest, and most beautiful problems in math.
 
 The conjecture states the following:
 
-{{< rawhtml >}}
 <div style="border: solid;">
-  {{< math >}}
-  $$
-  \text{For an arbitrary positive integer n, consider the function f:}
-  $$
-  {{< /math >}}
+  <div style="margin:10px;">
+  For an arbitrary positive integer n, consider the function $f$:
 
   {{< math >}}
   $$
-  f(n) = \begin{cases}n/2 & \text{if }n\%2=0 \text{ (even)}, \\
-  3n+1 & \text{if }n\%2=1 \text{ (odd)}\end{cases}
+  f(n)=\begin{cases}n/2 & n\%2=0\\
+  3n+1 & n\%2=1 \end{cases}
   $$
   {{< /math >}}
 
-  \begin{align}
-    &\text{By starting with any positive integer and repeatedly} \\
-    &\text{performing this operation to the output, an integer} \\
-    &\text{sequence is generated which will always eventually reach 1.}
-  \end{align}
+  
+  By starting with any positive integer and repeatedly performing this operation to the output, an integer sequence is generated which will always eventually reach 1. 
+  </div>
 </div>
 <br>
-{{< /rawhtml >}}
 
-Let's try an arbitrary number (e.g. 11) to see what happens when we repeatedly apply the rule.
+Let's try an arbitrary number (e.g. 11) to see what happens when we repeatedly apply the rule. Every time we reach an even number, we'll halve it; every time we reach an odd number, we'll compute 3*n+1.
 
 11 → 34 → 17 → 52 → 26 → 13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1 → 4 → 2 → 1 → 4 → 2 → 1 . . .
 
@@ -65,6 +59,7 @@ These animations are based on [this video by The Coding Train](https://www.youtu
 You can find the code for this project [here.](https://github.com/AryamanReddi99/collatz-visualisation)
 
 Please note that the gifs on this page may Moire a bit depending on your monitor resolution.
+
 ---
 
 ## Code
