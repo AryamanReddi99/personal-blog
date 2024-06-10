@@ -1,3 +1,10 @@
+.img-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 5px;
+}
+
 .img-container-2 {
     float: left;
     width: 50%;
@@ -17,8 +24,8 @@
 }
 figcaption {
   text-align: center;
-  font: smaller sans-serif;
-  font-size: 12px;
+  font: sans-serif;
+  font-size: 20px;
   color: "red";
 }
 

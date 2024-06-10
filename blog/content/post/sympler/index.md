@@ -52,7 +52,7 @@ We hosted a number of speakers with expertise in the fields of robot learning an
     <div class="img-container-2">
     <img src="wolfram.jpg" style="margin-bottom: 10px">
     <figcaption>
-    Proffesor Wolfram Burgard's presentation on his lab's latest work.</figcaption>
+    Professor Wolfram Burgard's presentation on his lab's latest work.</figcaption>
     </div>
 </div>
 {{< /rawhtml >}}
@@ -76,8 +76,12 @@ Additionally, we got to present our current research projects (and how they migh
 
 We also had a chance to explore the beautiful Christmas markets of Nürnberg, which were an absolute treat.
 
-
-{{< figure src="2.jpg" caption="Carlo with half of his PhDs." width="70%">}}
+{{< rawhtml >}}
+    <div class="img-container">
+    <img src="2.jpg" style="margin-bottom: 10px">
+    <figcaption>Carlo with half of his PhDs.</figcaption>
+    </div>
+{{< /rawhtml >}}
 
 
 {{< figure src="SYMPLER_logo.png" width="50%">}}
